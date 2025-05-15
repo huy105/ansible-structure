@@ -1,0 +1,22 @@
+# - name: Set fact
+#   set_fact:
+#     ip_key: "{{ ansible_host }}"
+
+- name: Print ip variable
+  debug:
+    msg: "Host: {{ ansible_host }}"
+
+- name: Print hosts
+  debug:
+    msg: "Host: {{ hosts }}"
+
+- name: Print info
+  debug:
+    msg: "Tag: {{ hosts[ansible_host]['path'] }}"
+
+- name: Fail if not found server info
+  when: ansible_host not in hosts
+  ansible.builtin.fail:
+    msg: "Server info haven't been defined"
+  
+  

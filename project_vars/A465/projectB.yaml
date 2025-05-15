@@ -4,6 +4,8 @@ platforms:
   - websphere
 
 hosts:
-  10.10.4.611:
+  10.10.4.61:
     path: abc
     dir: xyz
+
+tag: default
