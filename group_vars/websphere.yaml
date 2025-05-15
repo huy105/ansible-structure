@@ -1,0 +1,3 @@
+websphere_deploy_dir: /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/installedApps
+websphere_wsadmin_path: /opt/IBM/WebSphere/AppServer/bin/wsadmin.sh
+websphere_deploy_script: /opt/IBM/WebSphere/scripts/deploy.j2

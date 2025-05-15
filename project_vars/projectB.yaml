@@ -1,0 +1,9 @@
+project_app_dir: projects/projectB/app
+app_file: projectB.war
+platforms:
+  - websphere
+
+hosts:
+  10.10.4.611:
+    path: abc
+    dir: xyz

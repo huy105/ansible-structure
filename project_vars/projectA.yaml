@@ -1,0 +1,5 @@
+project_app_dir: projects/projectB/app
+app_file: projectB.war
+platforms:
+  - websphere
+  - mule

@@ -1,0 +1,9 @@
+---
+- name: Deploy for each role/platform
+  hosts: test
+  gather_facts: true
+  tasks:
+    - name: Apply role for each platform
+      loop: "{{ platforms }}"
+      include_role:
+        name: "{{ item }}"
